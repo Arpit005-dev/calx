@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calx</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <div class="header">
+      <span class="logo">CALX</span>
+      <button class="history-toggle" id="historyToggle" title="History">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- History Panel -->
+    <div class="history-panel" id="historyPanel">
+      <div class="history-header">
+        <span>History</span>
+        <button id="clearHistory" class="clear-hist-btn">Clear</button>
+      </div>
+      <div class="history-list" id="historyList">
+        <div class="history-empty">No calculations yet</div>
+      </div>
+    </div>
+
+    <!-- Display -->
+    <div class="display">
+      <div class="expression" id="expression">&nbsp;</div>
+      <div class="current-val" id="currentVal">0</div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="keypad">
+
+      <!-- Row 0: Scientific -->
+      <button class="btn sci" data-action="sqrt">√</button>
+      <button class="btn sci" data-action="square">x²</button>
+      <button class="btn sci" data-action="inverse">1/x</button>
+      <button class="btn sci backspace" data-action="backspace">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/><line x1="18" y1="9" x2="12" y2="15"/><line x1="12" y1="9" x2="18" y2="15"/>
+        </svg>
+      </button>
+
+      <!-- Row 1 -->
+      <button class="btn func" data-action="clear">AC</button>
+      <button class="btn func" data-action="negate">+/−</button>
+      <button class="btn func" data-action="percent">%</button>
+      <button class="btn op" data-action="op" data-op="÷">÷</button>
+
+      <!-- Row 2 -->
+      <button class="btn num" data-action="digit" data-digit="7">7</button>
+      <button class="btn num" data-action="digit" data-digit="8">8</button>
+      <button class="btn num" data-action="digit" data-digit="9">9</button>
+      <button class="btn op" data-action="op" data-op="×">×</button>
+
+      <!-- Row 3 -->
+      <button class="btn num" data-action="digit" data-digit="4">4</button>
+      <button class="btn num" data-action="digit" data-digit="5">5</button>
+      <button class="btn num" data-action="digit" data-digit="6">6</button>
+      <button class="btn op" data-action="op" data-op="−">−</button>
+
+      <!-- Row 4 -->
+      <button class="btn num" data-action="digit" data-digit="1">1</button>
+      <button class="btn num" data-action="digit" data-digit="2">2</button>
+      <button class="btn num" data-action="digit" data-digit="3">3</button>
+      <button class="btn op" data-action="op" data-op="+">+</button>
+
+      <!-- Row 5 -->
+      <button class="btn num zero" data-action="digit" data-digit="0">0</button>
+      <button class="btn num" data-action="decimal">.</button>
+      <button class="btn eq" data-action="equals">=</button>
+
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
