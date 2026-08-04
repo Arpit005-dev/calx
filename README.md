@@ -79,9 +79,11 @@ CalX performs calculations locally inside the browser. It does not collect, stor
 Give this repository a star if you find CalX useful.
 
 ---
+<p>
+<div align="center">
 
-<p align="center">
- Code • Create • Learn • Innovate 🚀
-   Made with ❤️ by Arpit Mishra
+### Code • Create • Learn • Innovate 🚀
+
+**Made with ❤️ by Arpit Mishra**
 </p>
 
