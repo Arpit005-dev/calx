@@ -81,6 +81,7 @@ Give this repository a star if you find CalX useful.
 ---
 
 <p align="center">
-  Made with ❤️ by Arpit Mishra
+ Code • Create • Learn • Innovate 🚀
+   Made with ❤️ by Arpit Mishra
 </p>
 
