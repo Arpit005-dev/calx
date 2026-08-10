@@ -46,7 +46,7 @@ calx/
 7. Select the CalX project folder.
 8. Pin CalX from the extensions menu.
 
-## 💻 How to Use
+## 💻 How to Use the extension
 
 1. Click the CalX icon in the Chrome toolbar.
 2. Enter numbers using the buttons or keyboard.
